@@ -58,7 +58,7 @@ export default function HeroSectionComponent(props: any) {
 
             <div className="container">
                 <h2 className='hero-main-heading '>
-                    Unveiling Beauty and Fashion's Future
+                    Unveiling Beauty and Fashion&apos;s Future
                 </h2>
                 <div>
                     <p className='date-venu'>20 - 24 May 2025 | Saraj Venue</p>

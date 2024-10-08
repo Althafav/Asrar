@@ -48,7 +48,7 @@ const ExhibitorProfilePage = ({ profile }: ProfilePageProps) => {
                 <div className="profile-content-wrapper mt-5">
                     {profile.items.map((item: any, index: number) => {
                         return (
-                            <div className="profile-detail-card">
+                            <div className="profile-detail-card" key={`profile-detail-card-${index}`}>
                                 <img src={profile.cardImage} alt={profile.name} className="profile-image" />
                                 <p className="profile-name text-white">{item.name}.</p>
                             </div>
