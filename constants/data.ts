@@ -149,42 +149,42 @@ beauty & fashion market.
         {
             id: 1,
             name: "Networking Opportunities",
-            image: "",
+            image: "/assets/icons/Why exhibit Icons/WE-01.png",
             content: "",
         },
 
         {
             id: 2,
             name: "Showcase Products & Services",
-            image: "",
+            image: "/assets/icons/Why exhibit Icons/WE-02.png",
             content: "",
         },
 
         {
             id: 3,
             name: "Generate Leads",
-            image: "",
+            image: "/assets/icons/Why exhibit Icons/WE-03.png",
             content: "",
         },
 
         {
             id: 4,
             name: "Drive Sales",
-            image: "",
+            image: "/assets/icons/Why exhibit Icons/WE-04.png",
             content: "",
         },
 
         {
             id: 5,
             name: "Build Relationships",
-            image: "",
+            image: "/assets/icons/Why exhibit Icons/WE-05.png",
             content: "",
         },
 
         {
             id: 6,
             name: "Increased Brand Visibility",
-            image: "",
+            image: "/assets/icons/Why exhibit Icons/WE-06.png",
             content: "",
         },
 
@@ -192,21 +192,21 @@ beauty & fashion market.
         {
             id: 7,
             name: "Market Research",
-            image: "",
+            image: "/assets/icons/Why exhibit Icons/WE-07.png",
             content: "",
         },
 
         {
             id: 8,
             name: "Gain A Competitve Advantage",
-            image: "",
+            image: "/assets/icons/Why exhibit Icons/WE-08.png",
             content: "",
         },
 
         {
             id: 9,
             name: "Generate Media Exposure",
-            image: "",
+            image: "/assets/icons/Why exhibit Icons/WE-09.png",
             content: "",
         },
 

@@ -54,7 +54,10 @@ export default function HeroSectionComponent(props: any) {
     }, []);
 
     return (
-        <div className='hero-section-component-wrapper margin_top'
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }} className='hero-section-component-wrapper margin_top'
             style={{
                 backgroundImage: "url('/assets/imgs/HERO IMAGE.jpg')",
                 backgroundRepeat: "no-repeat",
@@ -71,6 +74,6 @@ export default function HeroSectionComponent(props: any) {
                     <p className='date-venu'>20 - 24 May 2025 | Saraj Venue</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
