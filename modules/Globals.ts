@@ -31,7 +31,7 @@ export default class Globals {
 
   static BASE_URL: string =
     process.env.NODE_ENV === "production"
-      ? "https://glass-show-v2.vercel.app/"
+      ? "https://asrar-five.vercel.app/"
       : "http://localhost:4000/";
 
 
