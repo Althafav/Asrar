@@ -33,7 +33,7 @@ export default function AboutPage() {
             </Head>
             <div className="container">
                 <div className="video-container-wrapper">
-                   <img src="/assets/imgs/b1.jpeg" alt="" className='about-image'/>
+                   <img src="/assets/imgs/About us image.jpg" alt="" className='about-image'/>
                 </div>
 
                 <section>
