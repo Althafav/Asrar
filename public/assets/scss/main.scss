@@ -7,7 +7,6 @@
 @import "bootstrap-5.2.3/bootstrap.scss";
 @import "_partials/_controls";
 
-$font-family-inter: 'Inter', sans-serif;
 
 * {
     outline: none;
@@ -22,7 +21,7 @@ html {
 body {
     background: $jet-black;
     overflow-x: hidden;
-    font-family: $font-family-inter;
+    font-family: 'Lato', sans-serif;
 }
 
 h1,
@@ -33,11 +32,13 @@ h5,
 h6 {
     color: white;
     line-height: 1.1;
+    font-family: 'Lato', sans-serif;
 }
 
 p {
     font-size: 18px;
     line-height: 1.2;
+    font-family: 'Lato', sans-serif;
 }
 
 section {
