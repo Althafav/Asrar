@@ -1,9 +1,9 @@
 import CTABannerComponent from '@/components/CTABannerComponent';
 import HeroSectionComponent from '@/components/HeroSectionComponent'
-import NewsLetterComponent from '@/components/NewsLetterComponent';
+
 import SpinnerComponent from '@/components/UI/SpinnerComponent';
 import { ExhibitorProfile } from '@/constants/data';
-import { Featureitem } from '@/models/featureitem';
+
 import { Home } from '@/models/home';
 import { Homeabout } from '@/models/homeabout';
 import { Homebanner } from '@/models/homebanner';
