@@ -1,0 +1,92 @@
+.exhibitors-page-wrapper {
+
+    .banner-wrapper {
+        .banner-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+
+    .profile-content-wrapper {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+
+        overflow-x: auto;
+
+
+
+        &::-webkit-scrollbar {
+            height: 8px;
+
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.3);
+
+            border-radius: 10px;
+
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: rgba(255, 255, 255, 0.1);
+
+        }
+
+        @media screen and (max-width: 600px) {
+            justify-content: start;
+        }
+
+        .profile-detail-card {
+
+            height: 400px;
+            width: 200px;
+
+            .profile-image {
+                width: 200px;
+                height: 300px;
+                object-fit: cover;
+            }
+
+            .profile-name {
+                color: white;
+            }
+        }
+    }
+}
+
+.slider-container {
+    position: relative;
+}
+
+.custom-next-arrow,
+.custom-prev-arrow {
+    position: absolute;
+    bottom: -60px;
+    /* Position the buttons at the bottom */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-weight: bold;
+
+    border: 0.4px solid rgba(255, 255, 255, 0.689);
+}
+
+.custom-prev-arrow {
+    right: 85px;
+    /* Adjusted to ensure it is left of the next button */
+}
+
+.custom-next-arrow {
+    right: 25px;
+    /* Adjusted to be closer to the right edge */
+}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 600px) {}

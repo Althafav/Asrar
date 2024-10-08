@@ -1,0 +1,47 @@
+.footer-component-wrapper {
+    .address-desc {
+        color: $light-text;
+        text-align: justify;
+        font-size: 12px;
+        max-width: 300px;
+    }
+
+    .phone {
+        color: $light-text;
+        font-size: 16px;
+    }
+
+    .quicklink-items {
+
+
+        .menu-item {
+            color: $light-text;
+            padding-bottom: 10px;
+
+          
+        }
+    }
+
+    .social-icons {
+        width: 48px;
+        object-fit: contain;
+    }
+
+    .footer-head {
+        font-weight: bold;
+        color: white;
+        
+
+    }
+
+
+    .strategic-logo {
+        width: 240px;
+        object-fit: contain;
+    }
+
+    .copy-right {
+        color: white;
+        font-size: 14px;
+    }
+}

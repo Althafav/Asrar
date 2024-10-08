@@ -1,0 +1,64 @@
+.hero-section-component-wrapper {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+
+    .hero-main-heading {
+        font-size: 68px;
+        font-weight: 600;
+        max-width: 1000px;
+
+        background-image: url(/assets/imgs/gold-texture.jpg);
+        background-size: cover;
+        color: transparent;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 800px) {
+            font-size: 28px;
+        }
+    }
+
+    .date-venu {
+        font-size: 24px;
+        color: white;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 800px) {
+            font-size: 18px;
+        }
+    }
+
+
+    .footer-section-wrapper {
+        width: 100%;
+
+
+
+        .hero-second-heading {
+            font-size: 32px;
+            color: white;
+            letter-spacing: 10px;
+
+            @media screen and (max-width: 800px) {
+                font-size: 20px;
+            }
+        }
+
+        
+
+        .hero-cta-btn {
+            padding: 8px 16px;
+            background: $light-blue;
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+
+
+        }
+    }
+}

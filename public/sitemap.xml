@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://asrarshow.com/</loc>
+        <lastmod>2023-12-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+     <url>
+        <loc>https://asrarshow.com/book-your-stand</loc>
+        <lastmod>2023-12-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+     <url>
+        <loc>https://asrarshow.com/contact</loc>
+        <lastmod>2023-12-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+     <url>
+        <loc>https://asrarshow.com/register</loc>
+        <lastmod>2023-12-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://asrarshow.com/about</loc>
+        <lastmod>2023-12-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+   
+
+    <url>
+        <loc>https://asrarshow.com/exhibitors-profile</loc>
+        <lastmod>2023-12-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://asrarshow.com/why-exhibit</loc>
+        <lastmod>2023-12-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://asrarshow.com/download-brochure</loc>
+        <lastmod>2023-12-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+      <url>
+        <loc>https://asrarshow.com/partners</loc>
+        <lastmod>2023-12-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    
+
+   
+
+</urlset>

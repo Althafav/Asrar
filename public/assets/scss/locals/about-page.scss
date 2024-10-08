@@ -1,0 +1,65 @@
+.about-page-wrapper {
+
+
+    .video-container-wrapper {
+        height: 365px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        position: relative;
+
+        .about-image {
+            width: 100%;
+            height: 365px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        video {
+            width: 100%;
+            height: 365px;
+            object-fit: cover;
+        }
+
+        .play-btn {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+
+    }
+
+    .main-desc {
+        max-width: 1200px;
+        margin: auto;
+        color: $light-text;
+        text-align: center;
+    }
+
+    .vision-section {
+
+        .vision-container {
+            padding: 20px 40px;
+            backdrop-filter: blur(10px) saturate(200%);
+            -webkit-backdrop-filter: blur(10px) saturate(200%);
+            background-color: rgba(0, 0, 0, 0.18);
+
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+
+        .vision-label {
+            font-size: 40px;
+            font-weight: 100;
+            color: $light-blue;
+        }
+
+        .vision-heading {
+            font-size: 48px;
+            font-weight: 600;
+        }
+
+
+    }
+}
