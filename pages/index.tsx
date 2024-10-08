@@ -63,9 +63,7 @@ export default function HomePage() {
 
         )
       })}
-      <section>
-        <hr />
-      </section>
+    
       {/* about section */}
       {
         pageData.homeabout.value.map((a: any, index: number) => {
