@@ -80,22 +80,22 @@ export default function FooterComponent() {
 
                                 <li className='menu-item mb-3'>
                                     <div className='d-flex gap-2'>
-                                        <Link href="https://www.facebook.com/Int.GlassShow" target='_blank'>
+                                        <Link href="https://x.com/AsrarShow/status/1841399950283821106" target='_blank'>
                                         {/* x */}
                                             <img src="/assets/icons/social media Icons-05.svg" alt="" className='social-icons' />
 
                                         </Link>
 
-                                        <Link href="https://x.com/Int_glass_show" target='_blank'>
+                                        <Link href="https://www.facebook.com/share/p/xXTidEJFkdHunHtz/" target='_blank'>
                                             <img src="/assets/icons/social media Icons-06.svg" alt="" className='social-icons' />
 
                                         </Link>
 
-                                        <Link href="https://www.linkedin.com/company/international-glass-show/" target='_blank'>
+                                        <Link href="https://www.instagram.com/p/DAnYyHTTfGT/?img_index=1" target='_blank'>
                                             <img src="/assets/icons/social media Icons-07.svg" alt="" className='social-icons' />
 
                                         </Link>
-                                        <Link href="https://www.instagram.com/theinternationalglassshow/" target='_blank'>
+                                        <Link href="https://www.linkedin.com/posts/asrar-show_asrar2025-beautyandfashion-industryevents-activity-7247166075363090432-mmAq?utm_source=share&utm_medium=member_desktop" target='_blank'>
                                             <img src="/assets/icons/social media Icons-08.svg" alt="" className='social-icons' />
 
                                         </Link>
