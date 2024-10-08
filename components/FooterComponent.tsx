@@ -81,21 +81,22 @@ export default function FooterComponent() {
                                 <li className='menu-item mb-3'>
                                     <div className='d-flex gap-2'>
                                         <Link href="https://www.facebook.com/Int.GlassShow" target='_blank'>
-                                            <img src="/assets/icons/facebook.png" alt="" className='social-icons' />
+                                        {/* x */}
+                                            <img src="/assets/icons/social media Icons-05.svg" alt="" className='social-icons' />
 
                                         </Link>
 
                                         <Link href="https://x.com/Int_glass_show" target='_blank'>
-                                            <img src="/assets/icons/twitter.png" alt="" className='social-icons' />
+                                            <img src="/assets/icons/social media Icons-06.svg" alt="" className='social-icons' />
 
                                         </Link>
 
                                         <Link href="https://www.linkedin.com/company/international-glass-show/" target='_blank'>
-                                            <img src="/assets/icons/linkedin.png" alt="" className='social-icons' />
+                                            <img src="/assets/icons/social media Icons-07.svg" alt="" className='social-icons' />
 
                                         </Link>
                                         <Link href="https://www.instagram.com/theinternationalglassshow/" target='_blank'>
-                                            <img src="/assets/icons/instagram.png" alt="" className='social-icons' />
+                                            <img src="/assets/icons/social media Icons-08.svg" alt="" className='social-icons' />
 
                                         </Link>
                                     </div>
