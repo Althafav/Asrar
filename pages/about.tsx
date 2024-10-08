@@ -33,13 +33,13 @@ export default function AboutPage() {
             </Head>
             <div className="container">
                 <div className="video-container-wrapper">
-                   <img src="/assets/imgs/About us image.jpg" alt="" className='about-image'/>
+                    <img src="/assets/imgs/About us image.jpg" alt="" className='about-image' />
                 </div>
 
                 <section>
                     <div className="row">
                         <div className="col-12">
-                            <p className='main-desc' dangerouslySetInnerHTML={{ __html: pageData.content1.value }}></p>
+                            <p className='main-desc' >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dolorum itaque aliquam dolor fuga. Quidem dicta natus ipsa eaque nostrum sint voluptates dolores cupiditate magnam delectus, explicabo, rem, perspiciatis tempora!</p>
                         </div>
                     </div>
                 </section>
@@ -54,13 +54,15 @@ export default function AboutPage() {
                                 Vision
                             </div>
 
-                            <h1 className='section-heading'>
-                                International Glass Show (IGS)
-                            </h1>
+                            {/* <h1 className='section-heading'>
+                               Asrar
+                            </h1> */}
+                            <img src={`/assets/logos/asrar_logo.svg`} alt="Logo"
+                                className='menu-logo white-logo' style={{width: "200px" , objectFit: "contain"}} />
                         </div>
 
-                        <div className="col-lg-6">
-                            <p className='description' dangerouslySetInnerHTML={{ __html: pageData.image1content.value }}></p>
+                        <div className="col-lg-6 d-flex align-items-center">
+                            <p className='description' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, magni iusto iste eos inventore nobis quam voluptates ipsa, recusandae itaque rem, nisi praesentium neque cupiditate explicabo dolores repellat dolor delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime corrupti temporibus beatae ad exercitationem autem sunt assumenda dolor officia enim libero consequatur natus quis eligendi, molestiae modi, architecto dicta doloremque.</p>
                         </div>
                     </div>
                 </div>

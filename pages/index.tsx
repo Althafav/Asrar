@@ -2,7 +2,7 @@ import CTABannerComponent from '@/components/CTABannerComponent';
 import HeroSectionComponent from '@/components/HeroSectionComponent'
 
 import SpinnerComponent from '@/components/UI/SpinnerComponent';
-import { ExhibitorProfile } from '@/constants/data';
+import { ExhibitorProfile, whyExhibit, Workshops } from '@/constants/data';
 
 import { Home } from '@/models/home';
 import { Homeabout } from '@/models/homeabout';
@@ -14,6 +14,8 @@ import Globals from '@/modules/Globals';
 import Head from 'next/head';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
+import { motion } from "framer-motion";
+
 
 export default function HomePage() {
 
@@ -45,6 +47,13 @@ export default function HomePage() {
   if (!pageData) {
     return <SpinnerComponent />;
   }
+
+  const aboutcontent = `Prepare to be captivated by the brilliance of ASRAR, an 
+event exclusively dedicated to beauty and fashion 
+professionals. This ground-breaking event will unite 
+industry experts, manufacturers, suppliers, and innovators 
+to showcase the latest trends, products, and technologies 
+shaping the world of beauty and fashion.`
   return (
     <div className=''>
       <Head>
@@ -63,7 +72,7 @@ export default function HomePage() {
 
         )
       })}
-    
+
       {/* about section */}
       {
         pageData.homeabout.value.map((a: any, index: number) => {
@@ -76,15 +85,28 @@ export default function HomePage() {
 
               <div className="container about-us--home">
                 <div className="row g-5">
-                  <div className="col-lg-12 mb-lg-0 ">
-                    <h1 className="section-heading text-center text-gradient">{about.heading.value}</h1>
+                  <div className="col-lg-12 mb-lg-0">
+                    <motion.h1
+                      className="section-heading text-center text-gradient"
+                      initial={{ y: 50, opacity: 0 }}  // Adding opacity for a smoother transition
+                      whileInView={{ y: 0, opacity: 1 }}
+                      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}  // Adjusted for smoother effect
+                      viewport={{ once: true, amount: 0.5 }}
+                    >
+                      Who We Are
+                    </motion.h1>
 
-                    <p
+                    <motion.p
+                      initial={{ y: 50, opacity: 0 }}  // Adding opacity to match the heading transition
+                      whileInView={{ y: 0, opacity: 1 }}
+                      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.6 }}  // A longer delay for better separation
+                      viewport={{ once: true, amount: 0.5 }}
                       className="description mt-lg-5 mt-3 text-center"
-                      dangerouslySetInnerHTML={{ __html: about.content.value }}
-                    />
-
+                    >
+                      {aboutcontent}
+                    </motion.p>
                   </div>
+
 
                 </div>
 
@@ -112,50 +134,23 @@ export default function HomePage() {
 
 
           <div className="work-shop-cards-wrapper mt-lg-5 mt-3">
-            <div className="work-shop-card">
-              <img src="/assets/imgs/w1.jpg" alt="" className='work-shop-image' />
-              <div className="card-body-work-shop">
-                <h5 className='name mb-4  text-gradient'>MAKEUP MASTERCLASSES</h5>
-                <p className='content line-clamp-3'>Renowned makeup artists to conduct live demonstrations</p>
-              </div>
-            </div>
-
-            <div className="work-shop-card">
-              <img src="/assets/imgs/w1.jpg" alt="" className='work-shop-image' />
-              <div className="card-body-work-shop">
-                <h5 className='name mb-4 text-gradient'>MAKEUP MASTERCLASSES</h5>
-                <p className='content line-clamp-3'>Renowned makeup artists to conduct live demonstrations</p>
-              </div>
-            </div>
-
-
-            <div className="work-shop-card">
-              <img src="/assets/imgs/w1.jpg" alt="" className='work-shop-image' />
-              <div className="card-body-work-shop">
-                <h5 className='name mb-4 text-gradient'>HAIR STYLING TUTORIALS</h5>
-                <p className='content line-clamp-3'>Featuring top hairstylists who will demonstrate different hair styling
-                  techniques</p>
-              </div>
-            </div>
+            {Workshops.map((item: any, index: number) => {
+              return (
+                <motion.div key={`workshop-${index}`} className="work-shop-card" initial={{ y: 100, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.2 * index, ease: 'easeInOut' }}
+                  viewport={{ once: true, amount: 0.1 }}>
+                  <img src="/assets/imgs/w1.jpg" alt="" className='work-shop-image' />
+                  <div className="card-body-work-shop">
+                    <h5 className='name mb-4  text-gradient'>{item.name}</h5>
+                    <p className='content line-clamp-3'>{item.content}</p>
+                  </div>
+                </motion.div>
+              )
+            })}
 
 
-            <div className="work-shop-card">
-              <img src="/assets/imgs/w1.jpg" alt="" className='work-shop-image' />
-              <div className="card-body-work-shop">
-                <h5 className='name mb-4 text-gradient'>SKINCARE CONSULTATIONS</h5>
-                <p className='content line-clamp-3'>Experts who will analyze skin types and recommend suitable products
-                  and routines</p>
-              </div>
-            </div>
 
-
-            <div className="work-shop-card">
-              <img src="/assets/imgs/w1.jpg" alt="" className='work-shop-image' />
-              <div className="card-body-work-shop">
-                <h5 className='name mb-4 text-gradient'>BEAUTY PRODUCT DEMOS</h5>
-                <p className='content line-clamp-3'>Beauty brands to showcase their latest products</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -172,7 +167,10 @@ export default function HomePage() {
 
             {ExhibitorProfile.map((profile: any, index: any) => {
               return (
-                <div className="profile-card" key={`exhibitor-profile-${index}`}>
+                <motion.div className="profile-card" key={`exhibitor-profile-${index}`} initial={{ y: 100, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.2 * index, ease: 'easeInOut' }}
+                  viewport={{ once: true, amount: 0.1 }}>
 
                   <img src={profile.cardImage} alt={profile.name} className='profile-card-image' />
                   <div className="content-wrap">
@@ -187,7 +185,7 @@ export default function HomePage() {
 
                   </div>
 
-                </div>
+                </motion.div>
               )
             })}
 
@@ -223,24 +221,29 @@ export default function HomePage() {
 
                 <div className="row mt-lg-5 mt-3 d-flex justify-content-center ">
                   {
-                    exhibit.homeExhibitItem ? (
-                      exhibit.homeExhibitItem.value.map((ex: any, index: number) => {
-                        var exhibitItem: Homeexhibititem = ex;
-                        return (
-                          <div className="col-12 col-md-6 col-lg-4 mb-3" key={`why-exhibit-${index}`}>
 
-                            <div className="why-exhibit-card">
+                    whyExhibit.items.map((exhibitItem: any, index: number) => {
 
-                              <img className="icon" src={exhibitItem.icon.value[0]?.url} alt='exhibit' />
-                              <p
-                                className="desc"
-                                dangerouslySetInnerHTML={{ __html: exhibitItem.content.value }}
-                              />
-                            </div>
-                          </div>
-                        )
-                      })
-                    ) : ""
+                      return (
+                        <div className="col-12 col-md-6 col-lg-4 mb-3" key={`why-exhibit-${index}`}>
+
+                          <motion.div className="why-exhibit-card" initial={{ y: 100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.8, delay: 0.2 * index, ease: 'easeInOut' }}
+                            viewport={{ once: true, amount: 0.1 }}>
+
+                            <img className="icon" src={exhibitItem.image} alt='exhibit' />
+                            <p
+                              className="desc"
+
+                            >
+                              {exhibitItem.name}
+                            </p>
+                          </motion.div>
+                        </div>
+                      )
+                    })
+
                   }
                 </div>
 

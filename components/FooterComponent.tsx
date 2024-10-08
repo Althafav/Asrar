@@ -60,7 +60,7 @@ export default function FooterComponent() {
 
                                 </Link>
 
-                                <Link href="/" >
+                                <Link href="/why-exhibit" >
                                     <li className='menu-item'>Why Exhibit</li>
 
                                 </Link>

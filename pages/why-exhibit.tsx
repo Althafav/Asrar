@@ -1,11 +1,19 @@
 
 
 import SpinnerComponent from '@/components/UI/SpinnerComponent';
+import { whyExhibit } from '@/constants/data';
 import { Home } from '@/models/home';
 import { Homeexhibit } from '@/models/homeexhibit';
 import { Homeexhibititem } from '@/models/homeexhibititem';
 import Globals from '@/modules/Globals';
 import React, { useEffect, useState } from 'react'
+
+interface WhyExhibitModel {
+    id: number;
+    heading: string;
+    content: string;
+    items: []
+}
 
 export default function ExhibitorProfilePage() {
 
@@ -14,7 +22,7 @@ export default function ExhibitorProfilePage() {
 
     useEffect(() => {
         Globals.KontentClient.item("home_page")
-        .withParameter("depth", "2")
+            .withParameter("depth", "2")
             .toObservable()
             .subscribe((response: any) => {
 
@@ -53,24 +61,26 @@ export default function ExhibitorProfilePage() {
 
                                 <div className="row mt-lg-5 mt-3 d-flex justify-content-center ">
                                     {
-                                        exhibit.homeExhibitItem ? (
-                                            exhibit.homeExhibitItem.value.map((ex: any, index: number) => {
-                                                var exhibitItem: Homeexhibititem = ex;
-                                                return (
-                                                    <div className="col-12 col-md-6 col-lg-4 mb-3" key={`why-exhibit-${index}`}>
 
-                                                        <div className="why-exhibit-card">
+                                        whyExhibit.items.map((exhibitItem: any, index: number) => {
 
-                                                            <img className="icon" src={exhibitItem.icon.value[0]?.url} alt='exhibit' />
-                                                            <p
-                                                                className="desc"
-                                                                dangerouslySetInnerHTML={{ __html: exhibitItem.content.value }}
-                                                            />
-                                                        </div>
+                                            return (
+                                                <div className="col-12 col-md-6 col-lg-4 mb-3" key={`why-exhibit-${index}`}>
+
+                                                    <div className="why-exhibit-card">
+
+                                                        <img className="icon" src={exhibitItem.image} alt='exhibit' />
+                                                        <p
+                                                            className="desc"
+                                                          
+                                                        >
+                                                            {exhibitItem.name}
+                                                        </p>
                                                     </div>
-                                                )
-                                            })
-                                        ) : ""
+                                                </div>
+                                            )
+                                        })
+
                                     }
                                 </div>
 
