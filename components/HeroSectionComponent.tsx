@@ -54,7 +54,14 @@ export default function HeroSectionComponent(props: any) {
     }, []);
 
     return (
-        <div className='hero-section-component-wrapper'>
+        <div className='hero-section-component-wrapper'
+            style={{
+                backgroundImage: "url('/assets/imgs/HERO IMAGE.jpg')",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+            }}
+        >
 
             <div className="container">
                 <h2 className='hero-main-heading '>
