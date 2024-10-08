@@ -27,7 +27,7 @@ export default class Globals {
     apiKey: Globals.MANAGEMENT_API_KEY,
   });
 
-  static SITE_NAME = "Glass Show";
+  static SITE_NAME = "Asrar";
 
   static BASE_URL: string =
     process.env.NODE_ENV === "production"
