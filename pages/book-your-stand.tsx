@@ -28,7 +28,7 @@ export default function BookYourStand() {
 
     }
     return (
-        <div className=''>
+        <div className='margin_top'>
             <Head>
                 <title>{`${Globals.SITE_NAME} | Book your stand`}</title>
                 <meta name="title" content={`${Globals.SITE_NAME} | Book your stand `} />

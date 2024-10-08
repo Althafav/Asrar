@@ -37,7 +37,7 @@ export default function ExhibitorProfilePage() {
         return <SpinnerComponent />;
     }
     return (
-        <div className='exhibitors-page-wrapper '>
+        <div className='exhibitors-page-wrapper margin_top '>
             {
                 pageData.home_exhibit.value.map((e: any, index: number) => {
                     var exhibit: Homeexhibit = e;

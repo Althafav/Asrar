@@ -15,6 +15,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 
 export default function HomePage() {
@@ -88,18 +89,18 @@ shaping the world of beauty and fashion.`
                   <div className="col-lg-12 mb-lg-0">
                     <motion.h1
                       className="section-heading text-center text-gradient"
-                      initial={{ y: 50, opacity: 0 }}  // Adding opacity for a smoother transition
+                      initial={{ y: 50, opacity: 0 }}  
                       whileInView={{ y: 0, opacity: 1 }}
-                      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}  // Adjusted for smoother effect
+                      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }} 
                       viewport={{ once: true, amount: 0.5 }}
                     >
                       Who We Are
                     </motion.h1>
 
                     <motion.p
-                      initial={{ y: 50, opacity: 0 }}  // Adding opacity to match the heading transition
+                      initial={{ y: 50, opacity: 0 }} 
                       whileInView={{ y: 0, opacity: 1 }}
-                      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.6 }}  // A longer delay for better separation
+                      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.6 }} 
                       viewport={{ once: true, amount: 0.5 }}
                       className="description mt-lg-5 mt-3 text-center"
                     >
@@ -140,7 +141,7 @@ shaping the world of beauty and fashion.`
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.2 * index, ease: 'easeInOut' }}
                   viewport={{ once: true, amount: 0.1 }}>
-                  <img src="/assets/imgs/w1.jpg" alt="" className='work-shop-image' />
+                  <Image width={250} height={240} src={item.image} quality={100} alt={item.name} className='work-shop-image' />
                   <div className="card-body-work-shop">
                     <h5 className='name mb-4  text-gradient'>{item.name}</h5>
                     <p className='content line-clamp-3'>{item.content}</p>
@@ -172,7 +173,7 @@ shaping the world of beauty and fashion.`
                   transition={{ duration: 0.8, delay: 0.2 * index, ease: 'easeInOut' }}
                   viewport={{ once: true, amount: 0.1 }}>
 
-                  <img src={profile.cardImage} alt={profile.name} className='profile-card-image' />
+                  <Image width={280} height={400} src={profile.cardImage} alt={profile.name} className='profile-card-image' />
                   <div className="content-wrap">
                     <div className="name">
                       {profile.name}
@@ -229,7 +230,7 @@ shaping the world of beauty and fashion.`
 
                           <motion.div className="why-exhibit-card" initial={{ y: 100, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.8, delay: 0.2 * index, ease: 'easeInOut' }}
+                            transition={{ duration: 0.3, delay: 0.1 * index, ease: 'easeInOut' }}
                             viewport={{ once: true, amount: 0.1 }}>
 
                             <img className="icon" src={exhibitItem.image} alt='exhibit' />

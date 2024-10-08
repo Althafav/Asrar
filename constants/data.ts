@@ -210,12 +210,7 @@ beauty & fashion market.
             content: "",
         },
 
-        {
-            id: 10,
-            name: "Market Research",
-            image: "",
-            content: "",
-        },
+
     ]
 }
 
@@ -224,7 +219,7 @@ export const Workshops = [
         id: 1,
         name: "MAKEUP MASTERCLASSES",
         content: `Renowned makeup artists to conduct live demonstrations`,
-        image: "",
+        image: "/assets/imgs/MAKEUP MASTERCLASSES.jpg",
     },
 
     {
@@ -232,14 +227,14 @@ export const Workshops = [
         name: "HAIR STYLING TUTORIALS",
         content: `Featuring top hairstylists who will demonstrate different hair styling 
 techniques`,
-        image: "",
+        image: "/assets/imgs/HAIR STYLING TUTORIALS.jpg",
     },
 
     {
         id: 3,
         name: "NAIL ART WORKSHOPS",
         content: `Nail artists who can create intricate nail art designs`,
-        image: "",
+        image: "/assets/imgs/NAIL ART.jpg",
     },
 
 
@@ -248,14 +243,14 @@ techniques`,
         name: "SKINCARE CONSULTATIONS",
         content: `Experts who will analyze skin types and recommend suitable products 
 and routines.`,
-        image: "",
+        image: "/assets/imgs/SKINCARE CONSULTATION.jpg",
     },
 
     {
         id: 5,
         name: "BEAUTY PRODUCT DEMOS",
         content: `Beauty brands to showcase their latest products.`,
-        image: "",
+        image: "/assets/imgs/BEAUTY PRODUCT DEMOS.jpg",
     },
 
 

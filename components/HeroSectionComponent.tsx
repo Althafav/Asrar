@@ -54,7 +54,7 @@ export default function HeroSectionComponent(props: any) {
     }, []);
 
     return (
-        <div className='hero-section-component-wrapper'
+        <div className='hero-section-component-wrapper margin_top'
             style={{
                 backgroundImage: "url('/assets/imgs/HERO IMAGE.jpg')",
                 backgroundRepeat: "no-repeat",

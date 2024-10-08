@@ -5,21 +5,17 @@
     align-items: center;
     position: relative;
     transition: 0.3s;
-    // position: fixed;
-    // top: 0;
-    // z-index: 20;
+    position: fixed;
+    top: 0;
+    z-index: 20;
 
 
-    background: rgba(0, 0, 0, 0.07);
-
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(9px);
+    
 
     &.scrolled {
-        background: rgba(0, 0, 0, 0.07);
+        background: rgba(0, 0, 0, 0.851);
 
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.678);
         backdrop-filter: blur(30px);
         -webkit-backdrop-filter: blur(9px);
 

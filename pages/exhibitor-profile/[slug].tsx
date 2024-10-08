@@ -27,7 +27,7 @@ const ExhibitorProfilePage = ({ profile }: ProfilePageProps) => {
 
     return (
 
-        <div className="exhibitors-page-wrapper">
+        <div className="exhibitors-page-wrapper margin_top">
             <div className="container">
                 <ul className='d-flex gap-2 mt-4'>
                     <li className='text-white'>

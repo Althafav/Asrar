@@ -25,7 +25,7 @@ export default function AboutPage() {
         return <SpinnerComponent />;
     }
     return (
-        <div className=' about-page-wrapper'>
+        <div className=' about-page-wrapper margin_top'>
             <Head>
                 <title>{`${Globals.SITE_NAME} | About`}</title>
                 <meta name="title" content={`${Globals.SITE_NAME} | About `} />

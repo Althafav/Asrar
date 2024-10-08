@@ -29,7 +29,7 @@ export default function ExhibitorProfilePage() {
         return <SpinnerComponent />;
     }
     return (
-        <div className='exhibitors-page-wrapper '>
+        <div className='exhibitors-page-wrapper margin_top'>
             <Head>
                 <title>{`${Globals.SITE_NAME} | Exhibitor Profile`}</title>
 
