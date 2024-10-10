@@ -45,7 +45,7 @@ export default function MenuComponent() {
             <div className="container menu-container">
                 <div className='d-flex align-items-center justify-content-between'>
                     <Link href={`${Globals.BASE_URL}`} className="logo-wrapper">
-                        <img src={`/assets/logos/asrar_logo.svg`} alt="Logo"
+                        <img src={`/assets/logos/asrar_logo.png`} alt="Logo"
                             className='menu-logo white-logo' />
 
                     </Link>
