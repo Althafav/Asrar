@@ -71,7 +71,7 @@ export default function HeroSectionComponent(props: any) {
                     Unveiling Beauty and Fashion&apos;s Future
                 </h2>
                 <div>
-                    <p className='date-venu'>20 - 24 May 2025 | Saraj Venue</p>
+                    <p className='date-venu'>20 - 22 May 2025 | Saraj Venue</p>
                 </div>
             </div>
         </motion.div>
