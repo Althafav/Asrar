@@ -57,7 +57,7 @@ export default function AboutPage() {
                             {/* <h1 className='section-heading'>
                                Asrar
                             </h1> */}
-                            <img src={`/assets/logos/asrar_logo.svg`} alt="Logo"
+                            <img src={`/assets/logos/asrar_logo.png`} alt="Logo"
                                 className='menu-logo white-logo' style={{width: "200px" , objectFit: "contain"}} />
                         </div>
 
